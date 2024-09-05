@@ -23,5 +23,10 @@ public class Main {
         Scanner Klawiatura = new Scanner(System.in);
         int WpisanaLiczba = Klawiatura.nextInt();//wczytywanie z klawiatury liczby calkowitej
         System.out.println("Wpisana liczba: "+WpisanaLiczba);
+        if(WpisanaLiczba == WylosowanaLiczba){
+            System.out.println("Trafiona liczba");
+        }else{
+            System.out.println("Nie trafiono spróboj ponownie");
+        }
     }
 }
