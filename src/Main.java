@@ -32,7 +32,7 @@ public class Main {
         System.out.println(komunikat);
         int roznica = WylosowanaLiczba > WpisanaLiczba? WylosowanaLiczba - WpisanaLiczba : WpisanaLiczba - WylosowanaLiczba;
         roznica /= 10;//dzielenie calkowite bo wynik typu int
-        switch (roznica){//insturkacja switc
+        switch (roznica){//insturkacja switch
             case 0:
                 System.out.println("Brawo");
                 break;
@@ -45,5 +45,14 @@ public class Main {
             default:
                 System.out.println("lepiej nie proboj");
         }
+        //wyrazenie switch
+        System.out.println(
+                switch (roznica){
+                    case 0 -> "brawo";
+                    case 1 -> "bardzo blisko";
+                    case 2-> "dość blisko";
+                    default -> "słabo";
+                }
+        );
     }
 }
