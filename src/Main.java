@@ -2,11 +2,11 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        //,git init ,git config user.name user.email,git add . ,git commit -m "",git remote add origin ,git push -u master
+        //git init, git config user.name user.email,git add ., git commit -m "",git remote add origin link, git push -u master
         System.out.println("hello world");
         System.out.println("Witaj na lekcji");
 
-        int WylosowanaLiczba = (int)(Math.random()*10+1);//rzutowanie
+        int WylosowanaLiczba = (int)(Math.random()*100+1);//rzutowanie
         System.out.println(WylosowanaLiczba);
         /*
         typy proste z malych liter maja tylko wartosc
@@ -30,5 +30,20 @@ public class Main {
         }
         String komunikat = WylosowanaLiczba == WpisanaLiczba ? "Poprawnie":"Nie poprawnie";//wyrazenie warunkowe
         System.out.println(komunikat);
+        int roznica = WylosowanaLiczba > WpisanaLiczba? WylosowanaLiczba - WpisanaLiczba : WpisanaLiczba - WylosowanaLiczba;
+        roznica /= 10;//dzielenie calkowite bo wynik typu int
+        switch (roznica){//insturkacja switc
+            case 0:
+                System.out.println("Brawo");
+                break;
+            case 1:
+                System.out.println("Bardzo blisko");
+                break;
+            case 2:
+                System.out.println("Dość blisko");
+                break;
+            default:
+                System.out.println("lepiej nie proboj");
+        }
     }
 }
