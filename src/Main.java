@@ -54,5 +54,20 @@ public class Main {
                     default -> "słabo";
                 }
         );
+        //zgadowyanie 10 razy
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Zgadnij liczbe próba numer: "+ (i+1));
+            WpisanaLiczba = Klawiatura.nextInt();
+            if(WpisanaLiczba == WylosowanaLiczba){
+                System.out.println("Zgadłeś");
+                break;
+            }else{
+                if(WpisanaLiczba>WylosowanaLiczba){
+                    System.out.println("Wpisano za duzo");
+                }else{
+                    System.out.println("Wpisano za malo");
+                }
+            }
+        }
     }
 }
