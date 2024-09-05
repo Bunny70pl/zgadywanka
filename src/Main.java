@@ -28,5 +28,7 @@ public class Main {
         }else{
             System.out.println("Nie trafiono spróboj ponownie");
         }
+        String komunikat = WylosowanaLiczba == WpisanaLiczba ? "Poprawnie":"Nie poprawnie";//wyrazenie warunkowe
+        System.out.println(komunikat);
     }
 }
