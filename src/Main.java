@@ -69,5 +69,17 @@ public class Main {
                 }
             }
         }
+        //while(do skutku)
+        System.out.println("Zgadnij liczbe:");
+        WpisanaLiczba = Klawiatura.nextInt();
+        while (WpisanaLiczba != WylosowanaLiczba){
+            if(WpisanaLiczba>WylosowanaLiczba){
+                System.out.println("Wpisano za duzo");
+            }else{
+                System.out.println("Wpisano za malo");
+            }
+            WpisanaLiczba = Klawiatura.nextInt();
+        }
+        System.out.println("Trafiles");
     }
 }
